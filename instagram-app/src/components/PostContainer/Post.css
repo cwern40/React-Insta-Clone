@@ -1,0 +1,14 @@
+.user-id {
+    display: flex;
+}
+
+.user-id img{
+    height: 30px;
+    border-radius: 50px;
+    align-self: center;
+    margin: 0 10px;
+}
+
+.user-id p {
+    font-weight: 600;
+}
