@@ -14,7 +14,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <PostContainer data={this.state.post} />
+        <PostContainer post={this.state.post} />
       </div>
     );
   }
