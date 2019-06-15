@@ -1,0 +1,15 @@
+.search-bar {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.search-input {
+    width: 200px;
+    margin: 0 auto;
+    align-self: center;
+}
+
+i {
+    font-size: 40px;
+}
