@@ -3,25 +3,34 @@ import CommentInput from './CommentInput';
 import './Comment.css'
 import PropTypes from "prop-types";
 
-const Comment = (props) => {
-    console.log('Comment', props);
-    return (
-        <div className="comment-section">
-            <div className="comments">
-            {props.comment.map(comment => (
-                <div key={comment.id} className="comment">
-                    <p className="user">
-                        {comment.username}
-                    </p>
-                    <p className="comment-text">
-                        {comment.text}
-                    </p>
+class CommentSection extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state= {
+            comments: props.comments,
+            newcomment: []
+        }
+    }
+
+    render() {
+        return (
+            <div className="comment-section">
+                <div className="comments">
+                {this.state.comments.map(comment => (
+                    <div key={comment.id} className="comment">
+                        <p className="user">
+                            {comment.username}
+                        </p>
+                        <p className="comment-text">
+                            {comment.text}
+                        </p>
+                    </div>
+                ))}
                 </div>
-            ))}
+                <CommentInput />
             </div>
-            <CommentInput />
-        </div>
-    );
+        );
+    }
 };
 
 Comment.propTypes = {
@@ -34,4 +43,4 @@ Comment.propTypes = {
     )
 }
 
-export default Comment;
+export default CommentSection;

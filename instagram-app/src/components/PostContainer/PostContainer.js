@@ -1,5 +1,5 @@
 import React from "react";
-import Comment from '../CommentSection/CommentSection';
+import CommentSection from '../CommentSection/CommentSection';
 import './Post.css';
 
 const PostContainer = (props) => {
@@ -24,7 +24,7 @@ const PostContainer = (props) => {
                         <p>{post.likes} likes</p>
                     </div>
                 </div>
-                <Comment comment={post.comments} />
+                <CommentSection comments={post.comments} />
                 </div>
             ))}
         </div>
