@@ -8,7 +8,7 @@ const Searchbar = (props) => {
             <i className="fab fa-instagram"></i>
             </div>
             <div className="search-input">
-                <input type="text" placeholder="Search..." />
+                <input type="text" placeholder="Search..." onKeyDown={props.searchHandler}/>
             </div>
         </div>
     );
