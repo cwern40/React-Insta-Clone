@@ -5,7 +5,7 @@ const Searchbar = (props) => {
     return (
         <div className="search-bar">
             <div className="icon">
-            <i class="fab fa-instagram"></i>
+            <i className="fab fa-instagram"></i>
             </div>
             <div className="search-input">
                 <input type="text" placeholder="Search..." />

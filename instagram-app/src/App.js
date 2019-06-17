@@ -13,10 +13,12 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    console.log("CDM", this.state.post)
     this.setState({ post: dummyData });
   };
 
   render() {
+    console.log("Render", this.state.post)
     return (
       <div>
         <SearchBar />
