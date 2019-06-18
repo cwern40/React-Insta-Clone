@@ -8,8 +8,8 @@ const PostContainer = (props) => {
     return (
         <div className='all-posts'>
             {props.post.map(post => (
-                <div className='post-container'>
-                    <Post post={post} key={post.id}/>
+                <div className='post-container' key={post.imageUrl}>
+                    <Post post={post} />
                     <CommentSection comments={post.comments} />
                 </div>
             ))}
